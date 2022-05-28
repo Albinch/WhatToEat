@@ -8,6 +8,12 @@
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Quicksand:wght@700&display=swap" rel="stylesheet">
         <!-- CSS only -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+        <!-- JQuery -->
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <!-- JS -->
+        <script src="js/script.js"></script>
     </head>
 
     <body>
@@ -21,15 +27,27 @@
         <div id="search">
             <div id="input">
                 <input type="text" class="form-control" placeholder="Put some food you have in your fridge">
-                <button class="btn">Search</button>
+                <button id="search_btn" class="btn" onclick="search()">Search</button>
             </div>
             <div id ="foods">
-                <span>poulet <button class="btn btn-sm btn-outline-light">X</button></span>
             </div>
         </div>
 
         <div id="favs">
             
+        </div>
+
+        <div class="modal fade" id="result_modal" tabindex="-1" role="dialog" aria-labelledby="result_modal_title" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="result_modal_title">Recipes</h5>
+                    </div>
+                    <div class="modal-body" id="result_modal_body">
+                        
+                    </div>
+                </div>
+            </div>
         </div>
     </body>
 </html>
