@@ -1,0 +1,39 @@
+body{
+    font-family: 'Poppins', sans-serif !important;
+    font-family: 'Quicksand', sans-serif !important;
+}
+
+#search{
+    margin-top: 3%;
+    width: 100%;
+}
+
+#search #input{
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+}
+
+#search #input button{
+    margin-left: 1%;
+}
+
+#search #foods{
+    width: 90%;
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+}
+
+#search #foods span{
+    color: #fff;
+    background-color: #A9BF04;
+    margin-left : 1%;
+    padding : 10px;
+    border-radius: 7px;
+}
+
+#search #foods span .btn{
+    border-width: 0px !important;
+}
